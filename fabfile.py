@@ -7,6 +7,7 @@ PROJECT_DIR = '/var/www/wsgi_apps/%s' % (APP_NAME)
 WSGI_SCRIPT = '../carwasher.wsgi'
 
 env.hosts = ["%s@%s" % (USERNAME, SERVER)]
+env.password = 'Su650302'
 
 def deploy():
     with cd(PROJECT_DIR):
