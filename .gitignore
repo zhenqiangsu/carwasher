@@ -1,0 +1,4 @@
+# ignore list
+venv
+*.py[cod]
+.Python
