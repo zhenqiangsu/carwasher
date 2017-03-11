@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, flash
-from forms import ContactForm
+from carwasher.forms import ContactForm
 app = Flask(__name__)
-app.secret_key = 'development key zsu'
 
 @app.route('/contact', methods = ['GET', 'POST'])
 def contact():
