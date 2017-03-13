@@ -4,8 +4,8 @@ Routes and views for the flask application.
 
 from datetime import datetime
 from flask import render_template
-from carwash import app
-from carwash.forms import SignupForm
+from carwasher import app
+from carwasher.forms import SignupForm
 
 @app.route('/')
 @app.route('/home')
