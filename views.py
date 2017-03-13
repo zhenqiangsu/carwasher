@@ -8,7 +8,6 @@ from carwasher import app
 from carwasher.forms import SignupForm
 
 @app.route('/')
-@app.route('/home')
 def home():
     """Renders the home page."""
     return render_template(
