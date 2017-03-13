@@ -1,0 +1,33 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>Sign up</h2>
+  
+<form  action="{{ url_for('signup') }}" method=post>
+    <div class="form-group">
+        <label for="username">User name:</label>
+        <input type="text" class="form-control" id="username">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" class="form-control" id="phone">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+        <label for="passwork">Password:</label>
+        <input type="password" class="form-control" id="password">
+    </div>
+    <div class="form-group">
+        <label for="confirm">Confirm password:</label>
+        <input type="password" class="form-control" id="confirm">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" id="accept_tos"> I accept the TOS</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    {% endblock %}
